@@ -558,21 +558,13 @@ def POS_feature(user, online=False):
 from transformers import pipeline
 def get_des_embedding(user, pipeline, dim=768):
     description = user[0]._json['user']['description']
-    # feature_extract = pipeline('feature-extraction',
-    #                          model='roberta-base',
-    #                          tokenizer='roberta-base',
-    #                          device=3,
-    #                          padding=True, 
-    #                          truncation=True,
-    #                          max_length=50, 
-    #                          add_special_tokens=True)
+    
     rep = torch.zeros(1, dim)
     
     feature = pipeline(description)
     # print(torch.tensor(feature).size())
 
     for i in feature[0]:
-        # print(torch.tensor(i).size())
         rep += torch.tensor(i).unsqueeze(0)
         
     rep = rep/len(feature[0])
@@ -580,14 +572,7 @@ def get_des_embedding(user, pipeline, dim=768):
 
 
 def get_tweets_embedding(user, pipeline, dim=768):
-    # feature_extract = pipeline('feature-extraction',
-    #                          model='roberta-base',
-    #                          tokenizer='roberta-base',
-    #                          device=3,
-    #                          padding=True, 
-    #                          truncation=True,
-    #                          max_length=50, 
-    #                          add_special_tokens=True)
+    
     rep = torch.zeros(1, dim)
     rep_tmp = torch.zeros(1, dim)
 
