@@ -2,7 +2,7 @@
 
 This is a demo of the paper
 
-**BotPercent: Estimating Twitter Bot Populations from Groups to Crowds**
+**BotPercent: Estimating Twitter Bot Populations from Groups to Crowds**.
 <!-- [BotPercent: Estimating Twitter Bot Populations from Groups to Crowds][paper].
 
 [paper]: https://arxiv.org/pdf/2106.06935.pdf -->
