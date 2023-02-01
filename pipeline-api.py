@@ -36,10 +36,10 @@ auth = tweepy.OAuthHandler(api_key, api_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, proxy="127.0.0.1:15236", wait_on_rate_limit=True)
 
-with open("./checkpoint/Twibot-22_RandomForest_mix.pkl", 'rb') as f:
+with open("./checkpoint/RandomForest.pkl", 'rb') as f:
     RF = pickle.load(f)
     
-with open("./checkpoint/Twibot-22_Adaboost_mix.pkl", 'rb') as f:
+with open("./checkpoint/Adaboost.pkl", 'rb') as f:
     Adaboost = pickle.load(f)
 
 
