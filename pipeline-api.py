@@ -9,7 +9,6 @@ from model import MLP, MLP_text
 import torch
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
 import numpy as np
-import tqdm
 import argparse
 import os
 os.environ['http_proxy'] = 'http://127.0.0.1:15236'
@@ -199,11 +198,13 @@ def detect(username):
     weight = torch.tensor([[1.0990, 1.0991, 0.9009, 0.9008, 0.9008, 0.9008, 0.8996, 0.9006]]).t().double()
     pred_all = torch.matmul(pred_stack, weight).squeeze(-1)
     pred_binary = torch.argmax(pred_all, dim=1)
-
-    print("pred_score: {}".format(pred_all.tolist()))
+    
+    print('-'*100)
+    print("pred_score: \t human: {}, bot: {}".format(pred_all[:,0].item(), pred_all[:,1].item()))
     if pred_binary==0:
         print('human!')
     else:
         print("BOT!")
+    print('-'*100)
 
 detect(args.username)

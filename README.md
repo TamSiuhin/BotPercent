@@ -19,7 +19,9 @@ Twitter bot detection has become increasingly important in combating misinformat
 ![BotPercent](asset/overview.png)
 
 ## Installation ##
-```python
+We recommend you install the dependencies via pip, using the following command:
+
+```bash
 pip install torch==1.9.0
 pip install tweepy==4.12.1
 pip install transformers==4.24.0
@@ -29,10 +31,10 @@ pip install json
 pip install pickle
 ```
 
-## Demo ##
+## Run the Pipeline ##
 1. Download the Random Forest checkpoint [here](https://drive.google.com/file/d/1-sZXntdHimn6cq8WpGWMBAmpnENgWJKq/view?usp=sharing), and place it in the *checkpoint* folder.
 2. Open the *api.json* file and enter your Twitter API key, which can be obtained from [here](https://developer.twitter.com/en/docs/twitter-api).
-3. To detect a specific user, please run the following command
+3. To detect a specific user (with *username*), please run the following command
 
 ```bash
 python pipeline-api.py --username username --device 0
