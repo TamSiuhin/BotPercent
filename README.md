@@ -28,6 +28,7 @@ pip install transformers==4.24.0
 pip install scikit-learn==0.24.0
 pip install numpy==1.19.5
 pip install vaderSentiment==3.3.2
+pip install spacy==3.2.4
 ```
 
 ## Run the Pipeline ##
