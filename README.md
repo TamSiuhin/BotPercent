@@ -19,7 +19,7 @@ Twitter bot detection has become increasingly important in combating misinformat
 ![BotPercent](asset/overview.png)
 
 ## Installation ##
-We recommend you install the dependencies via pip, using the following command:
+Please install the dependencies via pip, using the following command:
 
 ```bash
 pip install torch==1.9.0
