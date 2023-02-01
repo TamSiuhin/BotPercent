@@ -27,8 +27,6 @@ pip install tweepy==4.12.1
 pip install transformers==4.24.0
 pip install scikit-learn==0.24.0
 pip install numpy==1.19.5
-pip install json
-pip install pickle
 ```
 
 ## Run the Pipeline ##
@@ -37,7 +35,7 @@ pip install pickle
 3. To detect a specific user (with *username*), please run the following command
 
 ```bash
-python pipeline-api.py --username username --device 0
+python pipeline-api.py --username username --device cpu
 ```
 
 
