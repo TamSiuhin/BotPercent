@@ -2,10 +2,11 @@
 
 This is a demo of the paper
 
-**BotPercent: Estimating Twitter Bot Populations from Groups to Crowds**.
-<!-- [BotPercent: Estimating Twitter Bot Populations from Groups to Crowds][paper].
+[BotPercent: Estimating Twitter Bot Populations from Groups to Crowds][paper].
 
-[paper]: https://arxiv.org/pdf/2106.06935.pdf -->
+[Zhaoxuan Tan*](https://zhaoxuan.info/), [Shangbin Feng*](https://bunsenfeng.github.io/), [Melanie Sclar](https://msclar.github.io/), [Herun Wan](https://whr000001.github.io/), [Minnan Luo](https://scholar.google.com/citations?user=C3ujEF0AAAAJ&hl=en), [Yejin Choi](https://homes.cs.washington.edu/~yejin/), [Yulia Tsvetkov](https://homes.cs.washington.edu/~yuliats/)
+
+[paper]: https://arxiv.org/abs/2302.00381
 *work in progress*
 
 Twitter bot detection has become increasingly important in combating misinformation, identifying malicious online campaigns, and protecting the integrity of social media discourse. While existing bot detection literature mostly focuses on identifying individual bots, it remains underexplored how to estimate the proportion of bots within specific communities and social networks, which has great implications for both content moderators and day-to-day users. In this work, we propose **community-level bot detection**, a novel approach to estimating the amount of malicious interference in online communities by estimating the percentage of bot accounts. Specifically, we introduce **BotPercent**, an amalgamation of Twitter bot-detection datasets and feature-, text-, and graph-based models that overcome generalization issues in existing individual-level models, resulting in a more accurate community-level bot estimation. Experiments demonstrate that **BotPercent** achieves state-of-the-art community-level bot detection performance on the TwiBot-22 benchmark while showing great robustness towards the tampering of specific user features. Armed with **BotPercent**, we analyze bot rates in different Twitter groups and communities, such as all active Twitter users, users that interact with partisan news media, users that participate in Elon Musk's content moderation votes, and the political communities in different countries and regions. Our experimental results demonstrate that the existence of Twitter bots is not homogeneous, but rather a spatial-temporal distribution whose heterogeneity should be taken into account for content moderation, social media policy making, and more.
@@ -41,4 +42,16 @@ pip install sentencepiece==0.1.97
 python pipeline-api.py --username username --device cpu
 ```
 
+## Citation ##
+If you find this codebase useful in your research, please cite the following paper.
 
+```bibtex
+@misc{tan2023botpercent,
+      title={BotPercent: Estimating Twitter Bot Populations from Groups to Crowds}, 
+      author={Zhaoxuan Tan and Shangbin Feng and Melanie Sclar and Herun Wan and Minnan Luo and Yejin Choi and Yulia Tsvetkov},
+      year={2023},
+      eprint={2302.00381},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI}
+}
+```
