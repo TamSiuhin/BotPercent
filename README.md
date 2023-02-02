@@ -2,9 +2,15 @@
 
 This is a demo of the paper
 
-[BotPercent: Estimating Twitter Bot Populations from Groups to Crowds][paper].
+[**BotPercent: Estimating Twitter Bot Populations from Groups to Crowds**][paper].
 
-[Zhaoxuan Tan*](https://zhaoxuan.info/), [Shangbin Feng*](https://bunsenfeng.github.io/), [Melanie Sclar](https://msclar.github.io/), [Herun Wan](https://whr000001.github.io/), [Minnan Luo](https://scholar.google.com/citations?user=C3ujEF0AAAAJ&hl=en), [Yejin Choi](https://homes.cs.washington.edu/~yejin/), [Yulia Tsvetkov](https://homes.cs.washington.edu/~yuliats/)
+[Zhaoxuan Tan*](https://zhaoxuan.info/), 
+[Shangbin Feng*](https://bunsenfeng.github.io/), 
+[Melanie Sclar](https://msclar.github.io/), 
+[Herun Wan](https://whr000001.github.io/), 
+[Minnan Luo](https://scholar.google.com/citations?user=C3ujEF0AAAAJ&hl=en), 
+[Yejin Choi](https://homes.cs.washington.edu/~yejin/), 
+[Yulia Tsvetkov](https://homes.cs.washington.edu/~yuliats/)
 
 [paper]: https://arxiv.org/abs/2302.00381
 *work in progress*
